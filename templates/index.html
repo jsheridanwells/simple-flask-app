@@ -1,0 +1,15 @@
+<html>
+    <h1>Index page</h1>
+</html>
+
+<div>
+    <a href="/hello/artie">Hello Artie</a> (this is hard coded :()
+</div>
+
+<div>
+    <a href="{{ url_for('hello', name='artie') }}">Not hard coded</a>
+</div>
+
+<div>
+    <a href="{{ url_for('hello', name='hopper') }}">Say hello to Hopper</a>
+</div>
