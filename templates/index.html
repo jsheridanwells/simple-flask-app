@@ -1,6 +1,6 @@
-<html>
-    <h1>Index page</h1>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Index page</h1>
 
 <div>
     <a href="/hello/artie">Hello Artie</a> (this is hard coded :()
@@ -13,3 +13,4 @@
 <div>
     <a href="{{ url_for('hello', name='hopper') }}">Say hello to Hopper</a>
 </div>
+{% endblock %}
